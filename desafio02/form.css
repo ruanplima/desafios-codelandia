@@ -71,30 +71,46 @@ form .informacao input{
     width: 100%;
 }
 
-form .btn input,
-.btn-back button{
+form .btn input{
     width: 100%;
     padding: 12px;
     background-color: #e99836;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     cursor: pointer;
     transition: .2s linear;
 }
 
-.btn-back{
-    position: absolute;
-    bottom: 95px;
-}
-
-.btn-back button{
-    background-color: #0000;
+p{
+    color: #ffff;
     border-radius: 5px;
     border: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 15px;
 }
 
-.btn-back button:hover{
-    text-decoration: underline;
+a{
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: -5%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+a:hover::after{
+    width: 110%;
 }
 
 form .btn input:hover{
