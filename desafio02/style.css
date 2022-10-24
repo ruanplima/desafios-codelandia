@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 400px;
+}
+
+header > .header-image{
+    background: url('images/image-header.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+header > .header-image > .header-txt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #00000076;
+}
+
+header > .header-image > .header-txt > p,
+h1{  
+    margin: 30px 30px 30px 50px;
+}
+
+header > .header-image > .header-txt > h1{
+    font-size: 30px;
+    color: #e99836;
+    text-shadow: -2px 2px 1px #00000054;
+}
+
+header > .header-image > .header-txt > p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffff;
+}
+
+main > .main-txt{
+    margin: 20px;
+    text-align: center;
+}
+
+main > .main-txt > h2{
+    margin-top: 40px;
+    font-size: 32px;
+    color: #000;
+    text-shadow: -2px 2px 1px #00000054;
+}
+
+main > .main-txt > p{
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main > .main-images{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #E49434;
+}
+
+.main-images section{
+    width: 300px;
+    position: relative;
+    margin: 10px 7px;
+}
+
+.main-images section img{
+    width: 100%;
+}
+
+.main-images section svg, path{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.car,
+.car2,
+.car3,
+.car4,
+.car5,
+.car6,
+.car7,
+.car8{
+    font-size: 20px;
+    position: absolute;
+    top: 17px;
+    left: 55px;
+    display: none;
+}
+
+.money,
+.money2,
+.money3,
+.money4,
+.money5,
+.money6,
+.money7,
+.money8{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 19px;
+    display: none;
+}
+
+.vendidos,
+.vendidos2,
+.vendidos3,
+.vendidos4,
+.vendidos5,
+.vendidos6,
+.vendidos7,
+.vendidos8{
+    position: absolute;
+    bottom: 20px;
+    font-size: 13px;
+    right: 20px;
+    display: none;
+}
+
+.esconder a,
+.esconder2 a,
+.esconder3 a,
+.esconder4 a,
+.esconder5 a,
+.esconder6 a,
+.esconder7 a,
+.esconder8 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-images-section img.img1:hover ~ .esconder > .money,
+.main-images2-section img:hover ~ .esconder2 .money2,
+.main-images3-section img:hover ~ .esconder3 .money3,
+.main-images4-section img:hover ~ .esconder4 .money4,
+.main-images5-section img:hover ~ .esconder5 .money5,
+.main-images6-section img:hover ~ .esconder6 .money6,
+.main-images7-section img:hover ~ .esconder7 .money7,
+.main-images8-section img:hover ~ .esconder8 .money8{
+    display: block;
+}
+
+.main-images-section img.img1:hover ~ .esconder > .vendidos,
+.main-images2-section img:hover ~ .esconder2 .vendidos2,
+.main-images3-section img:hover ~ .esconder3 .vendidos3,
+.main-images4-section img:hover ~ .esconder4 .vendidos4,
+.main-images5-section img:hover ~ .esconder5 .vendidos5,
+.main-images6-section img:hover ~ .esconder6 .vendidos6,
+.main-images7-section img:hover ~ .esconder7 .vendidos7,
+.main-images8-section img:hover ~ .esconder8 .vendidos8{
+    display: block;
+}
+
+.main-images-section img.img1:hover ~ .esconder > a > .car,
+.main-images2-section img:hover ~ .esconder2 a .car2,
+.main-images3-section img:hover ~ .esconder3 a .car3,
+.main-images4-section img:hover ~ .esconder4 a .car4,
+.main-images5-section img:hover ~ .esconder5 a .car5,
+.main-images6-section img:hover ~ .esconder6 a .car6,
+.main-images7-section img:hover ~ .esconder7 a .car7,
+.main-images8-section img:hover ~ .esconder8 a .car8{
+    display: block;
+}
+
+.esconder > a:hover ~ p,
+.esconder2 a:hover ~ p,
+.esconder3 a:hover ~ p,
+.esconder4 a:hover ~ p,
+.esconder5 a:hover ~ p,
+.esconder6 a:hover ~ p,
+.esconder7 a:hover ~ p,
+.esconder8 a:hover ~ p{
+    display: block;
+}
+
+.esconder p:hover,
+.esconder2 p:hover,
+.esconder3 p:hover,
+.esconder4 p:hover,
+.esconder5 p:hover,
+.esconder6 p:hover,
+.esconder7 p:hover,
+.esconder8 p:hover{
+    display: block;
+}
+
+.esconder > a > p:hover,
+.esconder2 a p:hover,
+.esconder3 a p:hover,
+.esconder4 a p:hover,
+.esconder5 a p:hover,
+.esconder6 a p:hover,
+.esconder7 a p:hover,
+.esconder8 a p:hover{
+    display: block;
+    text-decoration: underline;
+}

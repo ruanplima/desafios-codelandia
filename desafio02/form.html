@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalize Seu Pedido</title>
+
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form id="formulario">
+            <div class="name">
+                <input type="text" required placeholder="Nome">
+                <input type="text" placeholder="Sobrenome">
+            </div>
+            <div class="endereco">
+                <div class="casa">
+                    <input type="text" required placeholder="Estado">
+                    <input type="text" required placeholder="Cidade">
+                </div>
+                <div class="number">
+                    <input type="text" required placeholder="Rua / Complemento">
+                    <input type="number" placeholder="Nº" min="0">
+                </div>
+            </div>
+            <div class="informacao">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="tamanho-pe">
+                <select>
+                    <option selected disabled>Selecione o número do Calçado*</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                </select>
+            </div>
+            <div class="btn">
+                <input value="Finalizar pedido" type="submit">
+            </div>
+        </form>
+
+        <div class="btn-back">
+            <a href="index.html">
+                <button>
+                    Voltar a Comprar
+                </button>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>

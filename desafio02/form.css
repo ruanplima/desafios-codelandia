@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url('images/image-fundo-form.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+form{
+    width: 600px;
+}
+
+form input,
+select{
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+form .name,
+form .endereco .casa,
+form .endereco .number{
+    display: flex;
+    justify-content: space-between;
+}
+
+form .name input{
+    width: 49%;
+}
+
+form .tamanho-pe select{
+    width: 100%;
+}
+
+form .endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+form .endereco .casa input{
+    width: 49%;
+}
+
+form .endereco .number input[type = text]{
+    width: 69%;
+}
+
+form .endereco .number input[type = number]{
+    width: 29%;
+}
+
+form .informacao input{
+    width: 100%;
+}
+
+form .btn input,
+.btn-back button{
+    width: 100%;
+    padding: 12px;
+    background-color: #e99836;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.btn-back{
+    position: absolute;
+    bottom: 95px;
+}
+
+.btn-back button{
+    background-color: #0000;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-back button:hover{
+    text-decoration: underline;
+}
+
+form .btn input:hover{
+    background-color: #d38526ea;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media(max-width: 670px){
+    form{
+        width: 80%;
+    }
+}
