@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ecececc0;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2{
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #D7D4FF;
+}
+
+header > .txt-header{
+    width: 350px;
+    margin-top: 40px;
+}
+
+header p{
+    color: #797979;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+header > .txt-header > .btn-header > button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #6C63FF;
+    padding: 15px 45px;
+    margin: 13px 0 0 0;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+img{
+    width: 40%;
+}
+
+header > .txt-header > .btn-header > button:hover{
+    background-color: #6b63ffdc;
+}
+
+main > .cards-section-main > div{
+    width: 400px;
+    height: 430px;
+    margin: 10px;
+}
+
+main > .cards-section-main > div.card01 > .color-cards-section-main,
+main > .cards-section-main > div.card02 > .color-cards02-section-main,
+main > .cards-section-main > div.card03 > .color-cards03-section-main,
+main > .cards-section-main > div.card04 > .color-cards04-section-main,
+main > .cards-section-main > div.card05 > .color-cards05-section-main,
+main > .cards-section-main > div.card06 > .color-cards06-section-main{
+    height: 50%;
+}
+
+main > .cards-section-main > div.card01 > .color-cards-section-main{
+    background-color: #FF6363;
+}
+
+main > .cards-section-main > div.card02 > .color-cards02-section-main{
+    background-color: #63ECFF;
+}
+
+main > .cards-section-main > div.card03 > .color-cards03-section-main{
+    background-color: #F363FF;
+}
+
+main > .cards-section-main > div.card04 > .color-cards04-section-main{
+    background-color: #63FF73;
+}
+
+main > .cards-section-main > div.card05 > .color-cards05-section-main{
+    background-color: #FFDD63;
+}
+
+main > .cards-section-main > div.card06 > .color-cards06-section-main{
+    background-color: #6663FF;
+}
+
+.txt-cards-section-main,
+.txt-cards02-section-main,
+.txt-cards03-section-main,
+.txt-cards04-section-main,
+.txt-cards05-section-main,
+.txt-cards06-section-main{
+    padding: 15px;
+    background-color: white;
+    height: 50%;
+}
+
+main h2{
+    margin: 10px 0;
+}
+
+main p{
+    margin: 15px 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #808080;
+    font-weight: 600;
+}
+
+main > .cards-section-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #D7D4FF;
+    padding: 30px 0;
+}
+
+footer > h1{
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer > form{
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > form > input{
+    width: 100%;
+    padding: 15px;
+}
+
+textarea{
+    width: 400px;
+    padding: 15px;
+}
+
+input,
+textarea{
+    border: none;
+    outline: none;
+    margin: 5px 0;
+}
+
+footer > form > button{
+    background-color: #6C63FF;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: #ffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+footer > form > button:hover{
+    background-color: #6b63ffdc;
+}
+
+
+@media(max-width: 860px){
+    header{
+        flex-direction: column;
+    }
+
+    header > .txt-header > .btn-header > button{
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    img{
+        width: 60%;
+    }
+}
+
+@media(max-width: 450px){
+    footer > form{
+        width: 350px;
+    }
+
+    textarea{
+        width: 350px;
+    }
+}
