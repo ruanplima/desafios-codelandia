@@ -29,9 +29,12 @@
                 <form autocomplete="off" action="#">
                     <section class="form-information">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email">
+                        <input required placeholder="Insira seu e-mail" type="email" id="email">
                         <label for="password">Senha</label>
-                        <input type="password" id="password">
+                        <section class="password-images">
+                            <input id="senha" required placeholder="Insira sua senha" type="password" maxlength="15" minlength="6" id="password">
+                            <img onclick="OpenClose()" id="imagem" src="images-password/img-open.png" alt="#">
+                        </section>
                         <p><a href="#">Esqueceu sua senha?</a></p>
                         <section class="form-btn">
                             <button class="btn-login">Entrar</button>
@@ -50,6 +53,9 @@
             </section>
         </section>
     </main>
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>

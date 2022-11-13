@@ -50,6 +50,19 @@ form {
     margin-top: 5px;
 }
 
+.password-images{
+    position: relative
+}
+
+.password-images img{
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .form-information > p > a {
     color: #2B6CB0;
     text-decoration: none;
