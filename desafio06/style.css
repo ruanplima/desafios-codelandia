@@ -111,25 +111,12 @@ main > .container-sec > .section-informations > div > p{
 }
 
 
-@media (max-width: 925px){
+@media (max-width: 1110px){
     main{
-        flex-direction: column-reverse;
-        width: 100%;
+        flex-direction: column;
     }
 
     main > img{
         display: none;
-    }
-
-    main > .container-sec{
-        width: 80%;
-        padding: 10px;
-    }
-
-}
-
-@media(max-width: 520px){
-    main > .container-sec{
-        width: 90%;
     }
 }
