@@ -207,6 +207,7 @@ section.servicos h2{
 section.servicos .section-servicos-prestados{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     width: 100%;
 }
 
