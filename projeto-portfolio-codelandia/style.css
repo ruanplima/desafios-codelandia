@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: #171717;
+}
+
+.largura{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header span{
+    font-size: 1.625rem;
+    color: #F9F9F9;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+    color: #F9F9F9;
+    font-size: 1.125rem;
+    position: relative;
+    padding: 0 3px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: #00DF5E;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .3s linear;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+main.main{
+    align-items: center;
+}
+
+main .apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .apresentacao h1{
+    color: #F9F9F9;
+    font-size: 2.25rem;
+}
+
+main .apresentacao span{
+    color:#828282;
+    font-size: 1rem;
+}
+
+main img{
+    width: 200px;
+}
+
+main .apresentacao .apresentacao-btn button{
+    padding: .75rem 1.125rem;
+    margin: 0 .75rem 0 0;
+    cursor: pointer;
+    transition: .3s linear;
+    border: 1px solid transparent;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+main .apresentacao .apresentacao-btn button:hover
+{
+    transform: scale(1.03);
+}
+
+main .apresentacao .apresentacao-btn button:nth-child(1){
+    background-color: #00DF5E;
+    color: #171717;
+}
+
+main .apresentacao .apresentacao-btn button:nth-child(2){
+    border-color: #333333;
+    background-color: #171717;
+    color: #F9F9F9;
+}
+
+section.sobre-mim{
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+
+section.sobre-mim h2{
+    color: #F9F9F9;
+}
+
+section.sobre-mim p{
+    color: #828282;
+    max-width: 70ch;
+    line-height: 2rem;
+}
+
+div.contato ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    columns: 2;
+}
+
+div.contato ul li h3{
+    color: #F9F9F9;
+    font-size: 1.125rem;
+}
+
+div.contato ul li span{
+    color: #828282;
+    font-size: .9rem;
+}
+
+div.contato ul li i{
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: #212121;
+    font-size: 1.25rem;
+    color: #00DF5E;
+    margin-bottom: 1rem;
+}
+
+section.projetos-criados{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.projetos-criados h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #F9F9F9;
+}
+
+section.projetos-criados .section-projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+section.projetos-criados .section-projetos .projeto{
+    background-color: #333333;
+    padding: 1rem;
+    border: 1px solid #55555583;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+section.projetos-criados .section-projetos .projeto:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 0px 0px #00DF5E;
+}
+
+section.projetos-criados .section-projetos .projeto .slide-projeto{
+    width: 100%;
+    height: 100px;
+    background-color: #171717;
+    margin-bottom: 20px;
+}
+
+section.projetos-criados .section-projetos .projeto h3{
+    color: #F9F9F9;
+}
+
+section.projetos-criados .section-projetos .projeto span{
+    color: #828282;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+section.servicos{
+    flex-direction: column;
+    gap: 50px;
+}
+
+section.servicos h2{
+    color: #F9F9F9;
+}
+
+section.servicos .section-servicos-prestados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section.servicos .section-servicos-prestados .servico-prestado{
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    width: 300px;
+    height: 220px;
+    padding: 2rem;
+    justify-content: space-between;
+    border-bottom: 5px solid #00DF5E;
+    transition: .3s linear;
+}
+
+section.servicos .section-servicos-prestados .servico-prestado:hover,
+section.skills .minhas-skills i:hover{
+    transform: scale(1.05);
+}
+
+
+section.servicos .section-servicos-prestados .servico-prestado i{
+    font-size: 2rem;
+    color: #00DF5E;
+}
+
+section.servicos .section-servicos-prestados .servico-prestado span{
+    font-size: 1.5rem;
+    color: #828282;
+}
+
+section.skills{
+    flex-direction: column;
+    gap: 50px;
+}
+
+section.skills h2{
+    color: #F9F9F9;
+}
+
+section.skills .minhas-skills{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+section.skills .minhas-skills i{
+    font-size: 4rem;
+    color: #00DF5E;
+    background-color: #333333;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s linear;
+}
+
+footer{
+    background-color: #333333;
+    text-align: center;
+    padding: 1rem;
+    color: #F9F9F9;
+    margin-top: 50px;
+}
+
+footer strong{
+    color: #00DF5E;
+}
