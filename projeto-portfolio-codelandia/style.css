@@ -27,6 +27,15 @@ header span{
     color: #F9F9F9;
 }
 
+header button{
+    display: none;
+    border: 1px solid #333333;
+    background-color: transparent;
+    color: #F9F9F9;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
 nav ul{
     display: flex;
     gap: 30px;
@@ -67,6 +76,7 @@ main .apresentacao{
 main .apresentacao h1{
     color: #F9F9F9;
     font-size: 2.25rem;
+    max-width: 10ch;
 }
 
 main .apresentacao span{
@@ -125,7 +135,6 @@ div.contato ul{
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
-    columns: 2;
 }
 
 div.contato ul li h3{
@@ -206,9 +215,11 @@ section.servicos h2{
 
 section.servicos .section-servicos-prestados{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
     width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 section.servicos .section-servicos-prestados .servico-prestado{
@@ -219,6 +230,7 @@ section.servicos .section-servicos-prestados .servico-prestado{
     height: 220px;
     padding: 2rem;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 5px solid #00DF5E;
     transition: .3s linear;
 }
@@ -277,3 +289,51 @@ footer{
 footer strong{
     color: #00DF5E;
 }
+
+
+@media(max-width: 800px){
+    main img{
+        display: none;
+    }
+
+    main .apresentacao h1{
+        max-width: initial;
+    }
+
+    main .apresentacao{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    div.contato ul{
+        display: block;
+        columns: 2;
+        margin: 0 auto;
+    }
+
+    div.contato ul li{
+        margin: 0 0 30px 0;
+    }
+
+    div.contato ul li span{
+        display: block;
+        max-width: 16ch;    
+        word-break: break-all;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    header button{
+        display: initial;
+    }
+
+}
+
+@media(max-width: 700px){
+    section.projetos-criados .section-projetos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
