@@ -50,6 +50,14 @@ header nav ul li a:hover{
     background-color: #a5a8aa26;
 }
 
+header button{
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
 main.main{
     background-color: #EFF8FF;
     max-width: 100%;
@@ -88,7 +96,7 @@ main.main{
     transform: scale(.89);
 }
 
-main .image img{
+div.image img{
    max-width: 100%;
 }
 
@@ -97,7 +105,7 @@ section.funcionamento{
     gap: 3rem;
 }
 
-section.funcionamento h2{
+h2{
     font-size: 2.5rem;
     color: #293145;
     font-family: var(--font04)
@@ -187,4 +195,201 @@ section div.instalarApp .informacoes .div-btn button:hover{
 section div.instalarApp .informacoes .div-btn button span{
     font-size: 1.2rem;
     margin: 0 .5rem 0 0;
+}
+
+section.planos{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.planos p{
+    max-width: 60ch;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #6E7275;
+    line-height: 1.5rem;
+    font-family: var(--font01);
+}
+
+section.planos .nossos-planos{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.planos .nossos-planos div{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+    min-width: 280px;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section.planos .nossos-planos div h3{
+    font-family: var(--font04);
+    color: #293145;
+}
+
+section.planos .nossos-planos div p{
+    font-size: 1rem;
+}
+
+section.planos .nossos-planos div{
+    font-family: var(--font03);
+    color: #293145;
+}
+
+section.planos .nossos-planos div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section.planos .nossos-planos div.plano-bronze,
+section.planos .nossos-planos div.plano-ouro{
+    background-color: #EFF8FF;
+}
+
+section.planos .nossos-planos div.plano-prata{
+    background-color: #293145;
+}
+
+section.planos .nossos-planos div.plano-prata h3,
+section.planos .nossos-planos div.plano-prata .preco-plano span{
+    color: #fff;
+}
+
+section.planos .nossos-planos div div .preco-mes strong{
+    font-size: 2rem;
+    margin: 0 0 0 3px;
+}
+
+section.planos .nossos-planos div button{
+    background-color: #0F9AFE;
+    padding: .8rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: var(--font02);
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px 1px #00000043;
+    width: 100%;
+}
+
+div.contato{
+    background-image: url('images/img03.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+section.form-contato{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.form-contato h2{
+    color: #DBDBDB;
+}
+
+section.form-contato p{
+    max-width: 50ch;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #DBDBDB;
+    line-height: 1.5rem;
+    font-family: var(--font01)
+}
+
+section.form-contato .contato-email{
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    justify-content: center;
+}
+
+section.form-contato .contato-email input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+    outline: none;
+    padding: 5px 0;
+    background-color: transparent;
+    font-size: .9rem;
+    color: #DBDBDB;
+}
+
+section.form-contato .contato-email input::placeholder{
+    color: #DBDBDB;
+}
+
+section.form-contato .contato-email button{
+    background-color: #0c74be;
+    padding: .8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-family: var(--font04);
+    transition: .2s;
+}
+
+section.form-contato .contato-email button:active{
+    transform: scale(.9);
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--font04);
+    font-size: 1.25rem;
+    color: #293145;
+}
+
+
+
+@media (max-width: 850px){
+    header{
+        flex-direction: column;
+    }
+
+    main.main div{
+        flex-direction: column;
+    }
+
+    section div.instalarApp .informacoes{
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .image02{
+        display: none;
+    }
+
+    header span{
+        display: block;
+        background-color: red;
+        width: 100%;
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    .main .larguraPadrao .main-div h1{
+        font-size: 2rem;
+    }
 }

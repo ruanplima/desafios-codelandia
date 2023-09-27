@@ -6,6 +6,7 @@
     <title>Rachi - Consultoria</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <!-- link SVG -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +21,7 @@
     <header class="larguraPadrao">
         <span>Rachi</span>
         
-        <nav>
+        <nav id="navegation">
             <ul>
                 <li><a href="#">Funcionalidades</a></li>
                 <li><a href="#">App</a></li>
@@ -28,6 +29,7 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+        <button id="btn" onclick="toggleMenu()">&#x2630</button>
     </header>
 
     <main class="main">
@@ -88,10 +90,57 @@
                     </button>
                 </div>
             </div>
-            <div class="image">
+            <div class="image image02">
                 <img src="images/img02.svg" alt="#">
             </div>
         </div>
     </section>
+
+    <section class="planos larguraPadrao">
+        <h2>Nossos Planos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, architecto accusamus tempora ducimus nihil optio, consequatur pariatur ratione debitis quo error impedit.</p>
+
+        <div class="nossos-planos">
+            <div class="plano-bronze">
+                <h3>Bronze</h3>
+                <div class="preco-plano">
+                    <span class="preco-mes">R$<strong>28</strong>/mês</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+                <button>Assinar</button>
+            </div>
+            <div class="plano-prata">
+                <h3>Prata</h3>
+                <div class="preco-plano">
+                    <span class="preco-mes">R$<strong>57</strong>/mês</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+                <button>Assinar</button>
+            </div>
+            <div class="plano-ouro">
+                <h3>Ouro</h3>
+                <div class="preco-plano">
+                    <span class="preco-mes">R$<strong>97</strong>/mês</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+                <button>Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="contato">
+        <section class="form-contato larguraPadrao">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+            <form autocomplete="off" action="#" class="contato-email">
+                <input required placeholder="Seu melhor e-mail" type="email" name="email" id="email">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Rachi - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
