@@ -30,7 +30,7 @@ section.top-body button{
     bottom: 1rem;
     border: none;
     background-color: #0F9AFE;
-    padding: .8rem;
+    padding: .7rem .8rem;
     cursor: pointer;
     border-radius: 100%;
 }
