@@ -24,6 +24,10 @@
     padding: 2rem 2.5rem;
 }
 
+header{
+    position: relative;
+}
+
 header span{
     font-family: var(--font04);
     font-size: 1.5rem;
@@ -56,6 +60,10 @@ header button{
     border: none;
     cursor: pointer;
     padding: .5rem;
+    position: absolute;
+    top: 1.55rem;
+    right: 2.5rem;
+    display: none;
 }
 
 main.main{
@@ -319,7 +327,7 @@ section.form-contato .contato-email{
 
 section.form-contato .contato-email input{
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #ffffff;
     width: 200px;
     outline: none;
     padding: 5px 0;
@@ -381,15 +389,49 @@ footer p{
 
     header span{
         display: block;
-        background-color: red;
         width: 100%;
     }
-    
+
+    header nav ul{
+        display: none;
+    }
+
+    header button{
+        display: initial;
+    }
+
+    header nav.active{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    header nav.active ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
 @media(max-width: 600px){
     .main .larguraPadrao .main-div h1{
         font-size: 2rem;
+    }
+}
+
+@media(max-width: 460px){
+    .main .larguraPadrao .main-div{
+        gap: 2rem;
+    }
+    .main .larguraPadrao .main-div h1{
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    .main .larguraPadrao .main-div button{
+        width: 130px;
+        font-size: 1rem;
+    }
+    footer p{
+        font-size: 1rem;
     }
 }
