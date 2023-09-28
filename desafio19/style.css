@@ -24,6 +24,22 @@
     padding: 2rem 2.5rem;
 }
 
+section.top-body button{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    border: none;
+    background-color: #0F9AFE;
+    padding: .8rem;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+section.top-body button i{
+    color: #DBDBDB;
+    font-size: 1.1rem;
+}
+
 header{
     position: relative;
 }
