@@ -26,13 +26,13 @@
                 <h1>Faça login na sua conta</h1>
             </div>
             <div class="container-form">
-                <form autocomplete="off" action="#">
+                <form id="form" autocomplete="off" action="#">
                     <section class="form-information">
                         <label for="email">E-mail</label>
-                        <input required placeholder="Insira seu e-mail" type="email" id="email">
+                        <input oninput="validarEmail()"  required placeholder="Insira seu e-mail" type="email" class="required" id="email">
                         <label for="password">Senha</label>
                         <section class="password-images">
-                            <input id="senha" required placeholder="Insira sua senha" type="password" maxlength="15" minlength="6" id="password">
+                            <input id="senha" required placeholder="Insira sua senha" type="password" maxlength="15" minlength="6" class="required" id="password">
                             <img onclick="OpenClose()" id="imagem" src="images-password/img-open.png" alt="#">
                         </section>
                         <p><a href="#">Esqueceu sua senha?</a></p>
