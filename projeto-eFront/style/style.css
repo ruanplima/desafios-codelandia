@@ -12,6 +12,10 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.header{
+    background-color: #09090A;
+}
+
 header{
     max-width: 1100px;
     margin: 0 auto;
@@ -19,6 +23,22 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 1rem;
+}
+
+.mode{
+    background-color: #09090A;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: #e5e5e5;
+    border: none;
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.span-header{
+    color: #fff;
 }
 
 .content{
@@ -36,6 +56,7 @@ header{
     flex-direction: column;
     align-items: start;
     gap: 2rem;
+    text-align: center;
 }
 
 .sobre span{
@@ -168,7 +189,6 @@ header{
    }
    
    .sobre{
-        text-align: center;
         align-items: center;
    }
 
@@ -180,7 +200,7 @@ header{
 
    .vantagens{
         grid-template-columns: 1fr 1fr;
-        max-width: 400px;
+        max-width: 600px;
         gap: 2rem;
    }
 
@@ -194,6 +214,11 @@ header{
 }
 
 @media(max-width: 430px){
+    .oferta .container01{
+        gap: 0;
+        justify-content: space-between;
+    }
+
     .time{
         font-size: .92rem;
     }
@@ -201,4 +226,16 @@ header{
     .oferta .span-oferta{
         padding: 1rem 1.5rem;
     }
+}
+
+@media(max-width: 350px){
+    .time{
+        font-size: .8rem;
+    }
+}
+
+
+.light{
+    background-color: #e5e5e5;
+    color: #000;
 }
