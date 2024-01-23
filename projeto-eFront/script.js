@@ -10,3 +10,4 @@ function darkMode(){
 }
 
 btn.addEventListener('click', darkMode)
+
