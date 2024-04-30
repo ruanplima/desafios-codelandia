@@ -74,13 +74,13 @@ nav .menu li:hover::before{
     justify-content: space-between;
 }
 
-.inicio .apresentacao h2{
+.h2{
     font-family: var(--font3);
     font-weight: 300;
     font-size: 2.5rem;
 }
 
-.inicio .apresentacao p{
+.paragrafos-principais{
     max-width: 40ch;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -90,5 +90,16 @@ nav .menu li:hover::before{
 }
 
 .inicio .image img{
+    max-width: 300px;
+}
+
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .image img{
     max-width: 300px;
 }
