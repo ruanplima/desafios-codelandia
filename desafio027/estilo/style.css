@@ -72,6 +72,8 @@ nav .menu li:hover::before{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .h2{
@@ -98,8 +100,128 @@ nav .menu li:hover::before{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 6rem;
 }
 
 .sobre .image img{
-    max-width: 300px;
+    width: 500px;
+    height: 550px;
+    border-radius: 2rem;
+}
+
+.quem-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.quem-somos span{
+    color: #FF0000;
+    margin-bottom: -10px;
+    font-family: var(--font2);
+}
+
+.pratos,
+.pratos-populares{
+    text-align: center;
+}
+
+.style-h2{
+    font-size: 2.3rem;
+    font-family: var(--font3);
+    font-weight: 300;
+    text-align: center;
+}
+
+.pratos-populares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pratos .pratos-populares img{
+    max-width: 280px;
+    border-radius: 3rem;
+}
+
+.pratos .pratos-populares div{
+    padding: 1.5rem;
+    flex: 1;
+    transition: .2s linear;
+    border-radius: 1rem;
+}
+
+
+.pratos .pratos-populares div:hover{
+    box-shadow: 1px 1px 15px 10px #a0a0a06e;
+}
+
+.pratos .pratos-populares div h3{
+    font-family: var(--font1);
+}
+
+.pratos .pratos-populares div p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: var(--font3);
+    font-size: .9rem;
+    line-height: 1.1rem;
+    letter-spacing: .95px;
+}
+
+.pratos .pratos-populares div span{
+    color: #FF0000;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-family: var(--font2);
+}
+
+.opinioes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    position: relative;
+}
+
+.opinioes div img{
+    width: 80px;
+    border-radius: 100%;
+}
+
+.opinioes div{
+    background-color: #e9e9e9d0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1.2rem;
+    gap: 10px;
+    font-family: var(--font2);
+    border-radius: 1rem;
+}
+
+.opinioes div i{
+    color: #FF0000;
+}
+
+.opinioes div p{
+    max-width: 40ch;
+    margin-top: -10px;
+}
+
+.coracao{
+    position: absolute;
+    font-size: 30rem;
+    color: #FF0000;
+    z-index: -100;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -45%);
 }
