@@ -73,8 +73,6 @@ nav .menu li:hover::before{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .h2{
@@ -92,8 +90,13 @@ nav .menu li:hover::before{
     margin: -.8rem 0 2.2rem;
 }
 
+.inicio .image{
+    width: 260px;
+    height: 100%;
+}
+
 .inicio .image img{
-    max-width: 300px;
+    max-width: 100%;
 }
 
 
@@ -101,12 +104,12 @@ nav .menu li:hover::before{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .image{
-    max-width: 500px;
-    height: 550px;
+    max-width: 400px;
+    height: 450px;
 }
 
 .sobre .image img{
