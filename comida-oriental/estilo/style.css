@@ -73,6 +73,7 @@ nav .menu li:hover::before{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .h2{
@@ -92,11 +93,12 @@ nav .menu li:hover::before{
 
 .inicio .image{
     width: 260px;
-    height: 100%;
+    height: 320px;
 }
 
 .inicio .image img{
     max-width: 100%;
+    height: 100%;
 }
 
 
